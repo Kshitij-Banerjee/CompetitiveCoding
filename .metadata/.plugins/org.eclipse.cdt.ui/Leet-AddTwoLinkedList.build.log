@@ -1,0 +1,14 @@
+01:32:16 **** Incremental Build of configuration Debug for project Leet-AddTwoLinkedList ****
+make all 
+Building target: Leet-AddTwoLinkedList
+Invoking: MacOS X C++ Linker
+g++  -o "Leet-AddTwoLinkedList"  ./src/Solution.o   
+Undefined symbols for architecture x86_64:
+  "_main", referenced from:
+     implicit entry/start for main executable
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [Leet-AddTwoLinkedList] Error 1
+
+01:32:16 Build Finished (took 69ms)
+

@@ -1,0 +1,27 @@
+//============================================================================
+// Name        : Leet-LongestSubStringNotRepeatable.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <set>
+using namespace std;
+
+class Solution {
+public:
+    int lengthOfLongestSubstring(string s) {
+
+    	set<char> seen;
+
+    	int count =0;
+    	for(auto c: s) {
+
+    		if(seen. != seen.end()) {
+
+    		}
+    	}
+    }
+};

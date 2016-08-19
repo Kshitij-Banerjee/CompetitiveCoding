@@ -1,0 +1,52 @@
+//============================================================================
+// Name        : Leet-LongestSubStringNotRepeatable.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <set>
+using namespace std;
+
+class Solution {
+public:
+	int lengthOfLongestSubstring(string s) {
+
+		set<char> seen;
+
+		int count = 0;
+		set<char>::iterator start, end = seen.begin();
+		seen.emplace(s[0]);
+		for (char c : s) {
+
+			cout << "char: " << c << endl;
+			if (seen.find(c) != seen.end()) {
+				cout << "inside seen.find" << endl;
+				end++;
+			} else {
+				int size = 0;
+				size = distance(start, end);
+				cout << "3" << endl;
+				count = max(size, count);
+				cout << "4" << endl;
+				while (*start != c)
+					start++;
+				cout << "5" << endl;
+				start++; //step over the last match
+				cout << "6" << endl;
+			}
+		}
+
+		int size = distance(start, end);
+		count = max(size, count);
+		return count;
+	}
+};
+
+int main() {
+	Solution s;
+	int ans = s.lengthOfLongestSubstring("abcabc");
+	return ans;
+}

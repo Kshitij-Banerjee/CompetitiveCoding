@@ -1,0 +1,15 @@
+21:55:42 **** Incremental Build of configuration Debug for project HE-Dalton and Compiler Design ****
+make all 
+Building file: ../src/HE-Dalton and Compiler Design.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HE-Dalton and Compiler Design.d" -MT"src/HE-Dalton\ and\ Compiler\ Design.d" -o "src/HE-Dalton and Compiler Design.o" "../src/HE-Dalton and Compiler Design.cpp"
+Finished building: ../src/HE-Dalton and Compiler Design.cpp
+ 
+Building target: HE-Dalton and Compiler Design
+Invoking: MacOS X C++ Linker
+g++  -o "HE-Dalton and Compiler Design"  ./src/HE-Dalton\ and\ Compiler\ Design.o   
+Finished building target: HE-Dalton and Compiler Design
+ 
+
+21:55:43 Build Finished (took 642ms)
+

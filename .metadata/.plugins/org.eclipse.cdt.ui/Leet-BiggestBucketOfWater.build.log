@@ -1,0 +1,15 @@
+21:30:10 **** Incremental Build of configuration Debug for project Leet-BiggestBucketOfWater ****
+make all 
+Building file: ../src/Leet-BiggestBucketOfWater.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Leet-BiggestBucketOfWater.d" -MT"src/Leet-BiggestBucketOfWater.o" -o "src/Leet-BiggestBucketOfWater.o" "../src/Leet-BiggestBucketOfWater.cpp"
+Finished building: ../src/Leet-BiggestBucketOfWater.cpp
+ 
+Building target: Leet-BiggestBucketOfWater
+Invoking: MacOS X C++ Linker
+g++  -o "Leet-BiggestBucketOfWater"  ./src/Leet-BiggestBucketOfWater.o   
+Finished building target: Leet-BiggestBucketOfWater
+ 
+
+21:30:11 Build Finished (took 392ms)
+

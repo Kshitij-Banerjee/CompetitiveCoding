@@ -1,0 +1,15 @@
+21:41:33 **** Incremental Build of configuration Debug for project HE-RoysLifeCycle ****
+make all 
+Building file: ../src/HE-RoysLifeCycle.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HE-RoysLifeCycle.d" -MT"src/HE-RoysLifeCycle.o" -o "src/HE-RoysLifeCycle.o" "../src/HE-RoysLifeCycle.cpp"
+Finished building: ../src/HE-RoysLifeCycle.cpp
+ 
+Building target: HE-RoysLifeCycle
+Invoking: MacOS X C++ Linker
+g++  -o "HE-RoysLifeCycle"  ./src/HE-RoysLifeCycle.o   
+Finished building target: HE-RoysLifeCycle
+ 
+
+21:41:34 Build Finished (took 520ms)
+

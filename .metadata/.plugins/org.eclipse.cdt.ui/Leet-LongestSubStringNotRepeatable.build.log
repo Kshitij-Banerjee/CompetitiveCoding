@@ -1,0 +1,19 @@
+00:34:54 **** Incremental Build of configuration Debug for project Leet-LongestSubStringNotRepeatable ****
+make all 
+Building file: ../src/Leet-LongestSubStringNotRepeatable.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Leet-LongestSubStringNotRepeatable.d" -MT"src/Leet-LongestSubStringNotRepeatable.o" -o "src/Leet-LongestSubStringNotRepeatable.o" "../src/Leet-LongestSubStringNotRepeatable.cpp"
+../src/Leet-LongestSubStringNotRepeatable.cpp:25:15: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+                for (char c : s) {
+                            ^
+1 warning generated.
+Finished building: ../src/Leet-LongestSubStringNotRepeatable.cpp
+ 
+Building target: Leet-LongestSubStringNotRepeatable
+Invoking: MacOS X C++ Linker
+g++  -o "Leet-LongestSubStringNotRepeatable"  ./src/Leet-LongestSubStringNotRepeatable.o   
+Finished building target: Leet-LongestSubStringNotRepeatable
+ 
+
+00:34:55 Build Finished (took 491ms)
+

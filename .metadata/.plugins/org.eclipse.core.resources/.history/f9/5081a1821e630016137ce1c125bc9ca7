@@ -1,0 +1,18 @@
+/*
+ * Solution.cpp
+ *
+ *  Created on: Aug 16, 2016
+ *      Author: root
+ */
+
+#include "Solution.h"
+
+Solution::Solution() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Solution::~Solution() {
+	// TODO Auto-generated destructor stub
+}
+

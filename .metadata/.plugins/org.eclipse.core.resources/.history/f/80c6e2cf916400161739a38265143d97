@@ -1,0 +1,38 @@
+//============================================================================
+// Name        : Leet-BiggestBucketOfWater.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+typedef vector<int>::iterator vii;
+typedef vector<int> vi;
+
+class Solution {
+public:
+    int maxArea(vector<int>& height) {
+
+    	int max_area = 0;
+    	for( vii i = height.begin(); i != height.end(); i++ ){
+    		for(vii j = i + 1; j != height.end(); j++) {
+    			max_area = max(max_area, min(*j , *i) * (j-i));
+    		}
+    	}
+
+    	return max_area;
+    }
+};
+
+
+int main() {
+
+	Solution s;
+	cout << s.maxArea(new vector<int>())
+	return 0;
+}

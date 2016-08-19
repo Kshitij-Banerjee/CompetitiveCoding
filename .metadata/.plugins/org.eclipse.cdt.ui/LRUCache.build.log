@@ -1,0 +1,15 @@
+01:59:46 **** Incremental Build of configuration Debug for project LRUCache ****
+make all 
+Building file: ../src/LRUCache.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LRUCache.d" -MT"src/LRUCache.o" -o "src/LRUCache.o" "../src/LRUCache.cpp"
+Finished building: ../src/LRUCache.cpp
+ 
+Building target: LRUCache
+Invoking: MacOS X C++ Linker
+g++  -o "LRUCache"  ./src/LRUCache.o   
+Finished building target: LRUCache
+ 
+
+01:59:46 Build Finished (took 432ms)
+

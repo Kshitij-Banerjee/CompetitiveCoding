@@ -1,0 +1,24 @@
+//============================================================================
+// Name        : HE-RoysLifeCycle.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <iterator>
+
+using namespace std;
+
+int main() {
+	int count;
+	cin >>count;
+
+	vector<string> vs;
+	for(int i =0; i < count; i++){
+		string s;
+		cin >> s;
+		vs.push_back(s);
+	}
+}
