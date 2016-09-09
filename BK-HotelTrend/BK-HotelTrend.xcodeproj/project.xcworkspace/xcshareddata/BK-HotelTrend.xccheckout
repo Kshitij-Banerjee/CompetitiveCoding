@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>BE54F69A-DF5A-4984-B7E1-AA56D2968D7F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BK-HotelTrend</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>82CE370973B532AF25BF9C98F1A7EBC18329A74A</key>
+		<string>https://github.com/Kshitij-Banerjee/CompetetiveCoding.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>BK-HotelTrend/BK-HotelTrend.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>82CE370973B532AF25BF9C98F1A7EBC18329A74A</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Kshitij-Banerjee/CompetetiveCoding.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>82CE370973B532AF25BF9C98F1A7EBC18329A74A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>82CE370973B532AF25BF9C98F1A7EBC18329A74A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>coding</string>
+		</dict>
+	</array>
+</dict>
+</plist>
