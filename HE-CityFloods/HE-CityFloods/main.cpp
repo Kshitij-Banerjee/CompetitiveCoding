@@ -33,6 +33,7 @@ typedef pair<int, int> pii;
 
 #define sz(a) int((a).size())
 #define pb push_back
+#define all(x) x.begin(), x.end()
 #define tr(c,i) for(typeof((c).begin() i = (c).begin(); i != (c).end(); i++)
 #define present(c,x) ((c).find(x) != (c).end())
 #define cpresent(c,x) (find(all(c),x) != (c).end())
@@ -40,8 +41,42 @@ typedef pair<int, int> pii;
 #include <unordered_map>
 #include <algorithm>
 
+int find_set( int i , vi& parent){
+    if( parent[i] != i ) parent[i] = find_set( parent[i], parent );
+    return parent[i];
+}
+void merge(int i , int j, vi& parent, vi& rank){
+    
+    int I, J;
+    I = find_set(i,parent);
+    J = find_set(j,parent);
+   
+    if( I == J ) return ;
+    if( rank[I] > rank[J] ){ parent[J] = I; }
+    else{
+        parent[I] = J;
+        if( rank[I] == rank[J] ) rank[J] ++;
+    }
+    
+}
+
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    int N, C;
+    cin >> N >> C;
+    vi parent(N,0);
+    vi rank(N,1);
+    iota(all(parent), 0);
+    
+    
+    while( C-- ){
+        int i,j;
+        cin >> i >> j;
+        merge(i-1,j-1, parent, rank);
+    }
+    
+    for_each( all(parent), [parent](int x) mutable -> void {::find_set(x, parent);});
+    set<int> remaining(all(parent));
+    
+    cout << remaining.size();
     return 0;
 }
