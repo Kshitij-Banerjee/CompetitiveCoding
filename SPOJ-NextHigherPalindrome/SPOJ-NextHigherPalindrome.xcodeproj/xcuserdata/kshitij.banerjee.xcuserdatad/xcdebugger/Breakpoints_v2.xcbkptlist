@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SPOJ-NextHigherPalindrome/main.cpp"
-            timestampString = "505516087.898287"
+            timestampString = "505829081.566288"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
-            landmarkName = "solve( int n )"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "solve( string n )"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
@@ -26,12 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SPOJ-NextHigherPalindrome/main.cpp"
-            timestampString = "505516087.898287"
+            timestampString = "505829081.566288"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "solve( int n )"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "solve( string n )"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>

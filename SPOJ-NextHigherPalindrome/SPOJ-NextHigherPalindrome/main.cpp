@@ -8,42 +8,58 @@
 
 #include <iostream>
 #include <string>
+#include <algorithm>
 using namespace std;
 
-bool is_nines(string s) {
-    
-    for( auto c : s ) if( c != '9' ) return false;
+string increment( string s ){
+    int carry = 1;
+    for( auto i = s.rbegin(); i != s.rend(); i++ ){
+        
+        if( ! carry ) break;
+        else{
+            if( *i == '9' ) *i = '0';
+            else { (*i)++; carry = 0; }
+        }
+    }
+    if( carry ) return '1' + s;
+    else return s;
+}
+
+bool is_nines(string s ){
+    for( auto i : s ) if( i != '9') return false;
     return true;
 }
 
-void solve( int n ) {
-        string s = to_string(n);
+string solve( string n ) {
+    if( is_nines(n) ){
+        for( auto& i : n ) i = '0';
+        n[n.length()-1] = '1';
+        return '1' + n;
+    }
+    string first = n.substr(0, n.length()/2);
+    string second = n.substr((n.length()+1)/2, n.length()/2 );
     
-    if( is_nines(s) ){
-        cout << "1" + string(s.length()-1,'0') + "1" << endl;
-        return;
+    // if( first < second )  increment first, append second;
+    // if( first > second )  replace second by first.
+    reverse(first.begin(), first.end());
+    
+    if( first <= second ){
+        string prefix = increment(n.substr(0, (n.length()+1)/2));
+        string suffix = prefix;
+        reverse(suffix.begin(), suffix.end());
+        if( n.length() % 2 == 1 ){
+            suffix = suffix.substr(1,suffix.length()-1);
+        }
+        return prefix + suffix;
     }
     else{
-        int c = (int)(s.length())/2;
-        string pal = s;
-        int i = 0;
-        bool has_increased = false;
-        for( ; i < c; i ++ ){
-            int other = (int)s.length()-i-1;
-            if( pal[i] - '0' > pal[other] - '0' ) has_increased = true;
-            pal[i] = s[i];
-            pal[other] = s[i];
+        string prefix = n.substr(0, (n.length()+1)/2);
+        string suffix = prefix;
+        reverse(suffix.begin(), suffix.end());
+        if( n.length() % 2 == 1 ){
+            suffix = suffix.substr(1,suffix.length()-1);
         }
-        
-        if( !has_increased ){
-            int i = (int)(s.length()-1)/2;
-            int other = (int)s.length()-i-1;
-            int x = pal[i]-'0' + 1;
-            pal[i] = x + '0';
-            pal[other] = x + '0';
-        }
-        
-        cout << pal << endl;
+        return prefix + suffix;
     }
 }
 
@@ -54,9 +70,9 @@ int main(int argc, const char * argv[]) {
     cin >> T;
     
     while( T-- ) {
-        int n;
+        string n;
         cin >> n;
-        solve(n);
+        cout << solve(n) << endl;
     }
     return 0;
 }
